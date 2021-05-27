@@ -1,0 +1,4 @@
+outs:
+- md5: c00bd4c6edd9e3cfc5d78464133c4536
+  size: 298289
+  path: drug_consumption.data
