@@ -6,10 +6,9 @@ def load_raw_dataset(read_path, write_path) -> pd.DataFrame:
         'ID,' 'Age', 'Gender', 'Education', 'Country', 'Ethnicity', 
         'Nscore', 'Escore', 'Oscore', 
         'Ascore', 'Cscore,' 'Impulsive', 'SS', 'Alcohol', 'Amphet', 'Amyl', 'Benzos', 'Caff', 
-        'Cannabis', 'Choc', 'Coke', 'Crack', 'Ecstasy', 'Ketamine', 'Legalh', 'LSD', 'Meth',
-        'Mushrooms', 'Nicotinem', 'Semer', 'VSA'  
+        'Cannabis', 'Choc', 'Coke', 'Crack', 'Ecstasy', 'Ketamine', 'Legalh', 
     ]
-    df = pd.read_csv(read_path, names=columns).iloc[:,:-20]
+    df = pd.read_csv(read_path, names=columns)
     print(df.head())
     df.to_csv(write_path)
 
